@@ -1,7 +1,6 @@
 import org.junit.Test;
 
-import static junit.framework.TestCase.assertTrue;
-import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.*;
 
 public class DollarTest {
 
@@ -17,6 +16,7 @@ public class DollarTest {
     @Test
     public void testEquality(){
         assertTrue(new Dollar(5).equals(new Dollar(5)));
+        assertFalse(new Dollar(5).equals(new Dollar(6)));
     }
 
 }

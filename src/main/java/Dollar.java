@@ -10,8 +10,8 @@ public class Dollar {
         return new Dollar(amount * multiplier);
     }
 
-    public boolean equals(Object o)
-    {
-        return true;
+    public boolean equals(Object o) {
+        Dollar d = (Dollar) o;
+        return amount == d.amount;
     }
 }
